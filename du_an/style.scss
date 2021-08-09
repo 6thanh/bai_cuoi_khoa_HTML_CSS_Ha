@@ -7,6 +7,7 @@
 #all {
 	width: 100%;
 	min-height: 100px;
+/* =====menu===== */
 	nav {
 		position: fixed;
 		top: 0px;
@@ -23,34 +24,6 @@
 			a {
 				text-decoration: none;
 				color: white;
-			}
-		}
-		form {
-			width: 370px;
-			height: 35px;
-			line-height: 35px;
-			input{
-				&[type=text]{
-					width: 70%;
-					height: 30px;
-					line-height: 30px;	
-					margin-left: 5px;				
-					border-radius: 5px;
-					padding-left: 7px;
-					&:focus {
-						outline: none;
-					}
-				}				
-				&[type=submit]{
-					margin: 5px 0px 0px 5px;
-					width: 25%;
-					height: 32px;
-					line-height: 28px;
-					border-radius: 5px;
-					background: #865439;
-					color: white;	
-				}				
-				
 			}
 		}
 		ul {
@@ -100,8 +73,38 @@
 				}
 			}
 		}
+/* =====search===== */
+		form {
+			width: 370px;
+			height: 35px;
+			line-height: 35px;
+			input{
+				&[type=text]{
+					width: 70%;
+					height: 30px;
+					line-height: 30px;	
+					margin-left: 5px;				
+					border-radius: 5px;
+					padding-left: 7px;
+					&:focus {
+						outline: none;
+					}
+				}				
+				&[type=submit]{
+					margin: 5px 0px 0px 5px;
+					width: 25%;
+					height: 32px;
+					line-height: 28px;
+					border-radius: 5px;
+					background: #865439;
+					color: white;	
+				}				
+				
+			}
+		}		
 		
 	}
+/* =====support===== */
 	#support {
 		.hidden {
 			width: 192px;
@@ -133,6 +136,7 @@
 			}			
 		}
 	}
+/* =====header===== */
 	header {
 		position: relative;
 		width: 100%;
@@ -180,10 +184,11 @@
 			}			
 		}		
 	}
+/* =====main===== */
 	#cf_tree {
 		width: 370px;
 		height: 330px;
-		margin: 50px auto;
+		margin: 100px 15px 200px 15px;
 	}
 	#main {
 			width: 95%;
@@ -201,8 +206,7 @@
 			h3 {
 				text-align: center;
 				margin: 15px 0px;
-			}	
-			
+			}				
 			.tree {
 				display: grid;
 				grid-template-columns: auto auto;
@@ -210,17 +214,26 @@
 				border: 1px solid #865439;
 				border-radius: 5px;
 				margin: 10px auto;
+				background: #402218;
+				color: white;
+				p {
+					font-size: 12pt;
+				}
 				a {
 					text-decoration: none;
-					color: #C68B59;
-					
+					color: #C68B59;					
 				}				
 				img {
 					width: 100px;
-					height: 160px;
+					height: 200px;
 					border-radius: 5px;
 				}
+				.cf_tree {
+					padding: 10px;
+					text-align: justify;
+				}
 			}
+/* =====product===== */
 			.bean_coffee {
 				@mixin note{
 					width: 60%;
@@ -298,8 +311,12 @@
 					a {
 						text-decoration: none;
 					}
+					p {
+						margin-bottom: 100px;
+					}
 				}				
 			}
+/* =======comment======= */
 			.comment {
 				color: #402218;
 				img {
@@ -318,7 +335,8 @@
 					display: table;
 				}
 			}			
-		}		
+		}	
+/* =======footer======= */	
 	footer {
 		width: 100%;
 		min-height: 30px;
@@ -427,7 +445,7 @@
 				text-align: center;
 				#introduce {				
 					float: left;
-					margin: 250px 0px 0px 120px;				
+					margin: 250px 0px 0px 200px;				
 				}
 				a {				
 					float: left;				
@@ -453,6 +471,11 @@
 				}	
 			}
 		}
+		#cf_tree {
+		width: 600px;
+		height: 570px;
+		margin: 100px auto 100px;
+	}
 		#main {
 			display: grid;
 			grid-template-columns: auto auto auto;
